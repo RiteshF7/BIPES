@@ -595,14 +595,17 @@ Code.init = function() {
   for (var i = 0; i < Code.TABS_.length; i++) {
     let name = Code.TABS_[i];
     let tab = get(`#tab_${name}`)
-    tab.addEventListener("click", (ev) => {
-      ev.preventDefault()
-      Code.handleLink(name, 1)
-    })
-    tab.addEventListener("contextmenu", (ev) => {
-      ev.preventDefault()
-      Code.handleLink(name, 2)
-    })
+    if(tab){
+      tab.addEventListener("click", (ev) => {
+        ev.preventDefault()
+        Code.handleLink(name, 1)
+      })
+      tab.addEventListener("contextmenu", (ev) => {
+        ev.preventDefault()
+        Code.handleLink(name, 2)
+      })
+    }
+  
   }
   Blockly.svgResize(Code.workspace);
 
@@ -842,9 +845,9 @@ Code.initLanguage = function() {
   // Inject language strings.
   //Changed to a fixed title for all languages - BIPES Beta
   document.getElementById('tab_blocks').textContent = MSG['blocks'];
-  document.getElementById('tab_files').textContent = MSG['files'];
-  document.getElementById('tab_programs').textContent = MSG['shared'];
-  document.getElementById('tab_device').textContent = MSG['device'];
+  // document.getElementById('tab_files').textContent = MSG['files'];
+  // document.getElementById('tab_programs').textContent = MSG['shared'];
+  // document.getElementById('tab_device').textContent = MSG['device'];
 
   document.getElementById('linkButton').title = MSG['linkTooltip'];
   document.getElementById('runButton').title = MSG['runTooltip'];
