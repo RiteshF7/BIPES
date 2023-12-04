@@ -441,6 +441,7 @@ Code.checkAllGeneratorFunctionsDefined = function(generator) {
   return valid;
 };
 
+
 Code.reloadToolbox = function(XML_) {
   let toolboxText = new XMLSerializer().serializeToString(XML_).replace(/(^|[^%]){(\w+)}/g,
       function(m, p1, p2) {return p1 + MSG[p2];});
@@ -523,7 +524,7 @@ Code.init = function() {
   var rtl = Code.isRtl();
 
   // The toolbox XML specifies each category name using Blockly's messaging
-  // format (eg. `<category name="%{BKY_CATLOGIC}">`).
+  // format (eg. `<category name="%{F}">`).
   // These message keys need to be defined in `Blockly.Msg` in order to
   // be decoded by the library. Therefore, we'll use the `MSG` dictionary that's
   // been defined for each language to import each category name message

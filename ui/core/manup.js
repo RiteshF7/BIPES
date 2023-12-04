@@ -120,7 +120,6 @@ var collectManifestObj = function () {
     for (var i = 0; i < links.length; i++) {
         if (links[i].rel && links[i].rel == 'manifest') makeAjax(links[i].href);
     }
-
 };
 
 var testForManifest = function () {

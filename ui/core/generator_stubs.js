@@ -6698,3 +6698,5 @@ Blockly.Python['threepi_bump_right_is_pressed'] = function(block) {
 	var code = 'threepi_bump_sensors.right_is_pressed()';
 	return [code, Blockly.Python.ORDER_NONE];
 };
+
+
