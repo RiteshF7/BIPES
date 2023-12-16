@@ -6700,3 +6700,8 @@ Blockly.Python['threepi_bump_right_is_pressed'] = function(block) {
 };
 
 
+python.pythonGenerator.forBlock['my_block'] = function(block, generator) {
+	// TODO: Assemble python into code variable.
+	var code = '...\n';
+	return code;
+  };
