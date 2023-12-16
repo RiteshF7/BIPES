@@ -904,7 +904,7 @@
 
 
 
-  <category name="Character display">
+  <category name="Character display" >
       <label text="PCF8574 Display controller"></label>
 
       <label text="Library: https://github.com/dhylands/python_lcd"></label>

@@ -29,6 +29,14 @@ Blockly.Blocks['pwm'] = {
   }
 };
 
+Blockly.Blocks['my_block'] = {
+  init: function() {
+    this.setColour(230);
+ this.setTooltip("");
+ this.setHelpUrl("");
+  }
+};
+
 Blockly.Blocks['pwm_pico'] = {
   init: function(){
     this.appendDummyInput()

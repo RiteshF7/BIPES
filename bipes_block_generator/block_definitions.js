@@ -12,6 +12,7 @@ Blockly.Blocks['delay'] = {
   }
 };
 
+
 Blockly.Blocks['reset'] = {
   init: function() {
     this.appendDummyInput()
