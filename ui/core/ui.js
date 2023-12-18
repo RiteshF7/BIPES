@@ -598,11 +598,6 @@ workspace.prototype.change = function () {
        xhrGET(`toolbox/${selected.toolbox}`, 'document', (XML_) => {
         Code.reloadToolbox(XML_);
       });
-    } else {
-        xhrGET(`toolbox/${this.defaultToolbox}`, 'document', (XML_) => {
-          Code.reloadToolbox(XML_);
-        });
-        UI ['notify'].send(MSG['noToolbox']);
     }
     if (this.devices.constructor.name == 'Object') {
       /* refreshes block pinout with device change */

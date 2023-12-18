@@ -1,5 +1,5 @@
 <document>
-    <category name="%{BKY_CATLOGIC}" colour="%{BKY_LOGIC_HUE}" hidden="true">
+    <category name="%{BKY_CATLOGIC}"  colour="%{BKY_LOGIC_HUE}" hidden="true">
       <block type="controls_if"></block>
       <block type="logic_compare"></block>
       <block type="logic_operation"></block>
@@ -2158,7 +2158,7 @@ _
 <block type="math_trunc">
 </block>
 </category>
-<category name="micropython">
+<category name="micropython" >
 <block type="micropython_const">
 </block>
 <block type="micropython_opt_level">
